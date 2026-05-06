@@ -17,10 +17,6 @@
         cursor: pointer;
         font-size: 18px;
       }
-      #resetBtn {
-        background-color: white;
-        color: black;
-      }
     </style>
   </head>
   <body>
@@ -29,8 +25,7 @@
 
     <button onclick="increase()">+ Increase</button>
     <button onclick="decrease()">- Decrease</button>
-    <button onclick="reset()" id="resetBtn">Reset</button>
-
+    
     <script>
       var count = 0;
       function increase() {
@@ -39,10 +34,6 @@
       }
       function decrease() {
         count = count - 1;
-        document.getElementById("count").innerHTML = count;
-      }
-      function reset() {
-        count = 0;
         document.getElementById("count").innerHTML = count;
       }
     </script>
